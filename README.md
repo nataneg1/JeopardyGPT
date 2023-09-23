@@ -10,7 +10,7 @@ pip install -r requirements.txt
 2. Shuffle the questions to ensure a different order every time the quiz is taken.
 
 ## Quiz Interaction:
-1. Prompt the user to start the quiz. Ask what level of difficulty they want. The difficulty is measured by the $ value of the question (as they are jeopardy questions). Easy is 200-400. Medium is 400-700. Hard is 700-1000. Extra hard is question that are labeled as "Final Jeopardy!"
+1. Prompt the user to start the quiz. Ask what level of difficulty they want. The difficulty is measured by the $ value of the question (as they are jeopardy questions). Easy is 200-400. Medium is 400-700. Hard is 700-1000. Extra hard is question that are labeled as "Final Jeopardy!". Ask how long the quiz should be. Minimum of 3 questions, maximum of 30.
 2. Use ChatGPT to ask the questions to the user.
 3. Have the user first answer the question as a free response (no multiple choice)
 4. If the free response answer is incorrect: Use ChatGPT to generate 4 total multiple choice answers given the answer in the CSV (meaning 1 of the four is the answer directly from the csv, the other 3 are chatgpt generated. They should look like the answer in the CSV to not give away that the other answers are AI generated). User must choose the correct one answer.
